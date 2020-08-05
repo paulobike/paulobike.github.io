@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap 4 Portfolio/Resume Theme for Developers</title>
+    <title>Paul Obike</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <meta name="description" content="Paul obike's web development portfolio">
+    <meta name="author" content="Paul Obike">    
+    <meta name="keywords" content="Paul Obike, developer, hire developer, web, fullstack">    
     <link rel="shortcut icon" href="favicon.ico">  
     
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -46,7 +47,7 @@
                     <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                
                 </ul> 
             </div><!--//profile-->
-            <a class="btn btn-cta-primary float-right" href="https://themes.3rdwavemedia.com/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+            <a class="btn btn-cta-primary float-right" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-paper-plane"></i> Contact Me</a>              
         </div><!--//container-->
     </header><!--//header-->
     
@@ -57,8 +58,8 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>Write a brief intro about yourself. It's a good idea to include your personal interests and hobbies as well. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec. Commodo ligula eget dolor. Aenean massa.</p>
-                         
+                            <p>I am a fullstack developer whom with hardwork, uses the latest technologies to build and deploy wonderful applications always within the specs of my client.</p>
+                            <!-- <h4>What can I do?</h4> -->
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
@@ -70,7 +71,7 @@
                                                
                             <div class="item featured text-center">
                                 
-                                <div class="featured-image has-ribbon">
+                                <div class="featured-image has-ribbon"> 
                                     <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
                                     <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.jpg" alt="project name" width="300"/>
                                     </a>
@@ -189,7 +190,7 @@
             </div><!--//primary-->
             <div class="secondary col-lg-4 col-12">
                  <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
+                    <div class="section-inner shadow-sm rounded" id="contact">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
@@ -350,6 +351,39 @@
             </div><!--//secondary-->    
         </div><!--//row-->
     </div><!--//masonry-->
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Send me a mail</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form action="mailto:paulobike98@gmail.com" method="POST">
+                <div class="modal-body">
+                    <div class="form-group mb-2">
+                        <label for="customer-email" class="sr-only">Email</label>
+                        <input class="form-control" placeholder="email@example.com" name="email" type="email" required id="customer-email">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="customer-telephone" class="sr-only">Telephone</label>
+                        <input class="form-control" placeholder="0800 000 0000" name="telephone" type="tel">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <textarea type="password" class="form-control" id="inputPassword2" placeholder="Enter your message" required></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-success btn-sm" data-dismiss="modal" value="Send message">
+                </div>
+            </form>
+           
+          </div>
+        </div>
+      </div>
     
     <!-- ******FOOTER****** --> 
     <footer class="footer">

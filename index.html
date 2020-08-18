@@ -47,7 +47,8 @@
                     <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                
                 </ul> 
             </div><!--//profile-->
-            <a class="btn btn-cta-primary float-right" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+            <a class="btn btn-cta-primary float-right d-none d-lg-block" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+            <a class="btn btn-cta-primary float-right d-lg-none" href="#contact"><i class="fas fa-paper-plane"></i> Contact Me</a>              
         </div><!--//container-->
     </header><!--//header-->
     
@@ -197,6 +198,7 @@
                                 <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Lagos, Nigeria</li>
                                 <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:">paulobike98@gmail.com</a></li>
                                 <li><i class="fas fa-phone"></i><span class="sr-only">Telephone:</span><a href="tel:+2347066117602">+2347066117602</a></li>
+                                <li><a class="btn btn-cta-primary btn-sm d-lg-none" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-envelope text-white" style="top: 0;"></i> Mail Me</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -372,12 +374,12 @@
                         <label for="customer-telephone" class="sr-only">Telephone</label>
                         <input class="form-control" placeholder="0800 000 0000" name="telephone" type="tel">
                     </div>
-                    <div class="form-group mx-sm-3 mb-2">
+                    <div class="form-group mx-sm-auto mb-2">
                         <textarea type="password" class="form-control" id="inputPassword2" placeholder="Enter your message" required></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <input type="submit" class="btn btn-success btn-sm" data-dismiss="modal" value="Send message">
+                    <input type="submit" class="btn btn-success btn-sm" value="Send message">
                 </div>
             </form>
            
